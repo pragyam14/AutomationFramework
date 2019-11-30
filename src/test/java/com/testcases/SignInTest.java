@@ -16,6 +16,7 @@ public class SignInTest extends Page {
 		//test.log(LogStatus.INFO, "SignIn Test started");
 		HomePage home=new HomePage();
 		home.gotoSignIn();
+		System.out.println("firt test: Signin test started");
 		//test.log(LogStatus.INFO, "SignIn Test ended");
 		Page.quitBrowser();	
 
