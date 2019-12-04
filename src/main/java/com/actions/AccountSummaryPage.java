@@ -25,13 +25,14 @@ public class AccountSummaryPage extends Page {
 	}
 	
 	public void goToTransferFund() {
-		
+		acctsummary.TransferFundsTab.click();
 	}
 	
 	public void goToPayBills() {
-		acctsummary.paybillsbtn.click();
+		acctsummary.paybillstab.click();
 		
 	}
+	
 	
 	public void goToMyMoneyMap() {
 		

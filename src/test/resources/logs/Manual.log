@@ -1,0 +1,33 @@
+04-12-2019 01:49:24 QALogger Launching Chrome Browser
+04-12-2019 01:49:24 QALogger This is debug message
+04-12-2019 01:49:24 QALogger This is fatal message
+04-12-2019 01:49:24 QALogger This is warning message
+04-12-2019 01:49:25 QALogger clicking signin button
+04-12-2019 01:49:25 QALogger type username
+04-12-2019 01:49:25 QALogger type password
+04-12-2019 01:49:25 QALogger click submit button
+04-12-2019 01:49:29 QALogger Launching Chrome Browser
+04-12-2019 01:49:29 QALogger This is debug message
+04-12-2019 01:49:29 QALogger This is fatal message
+04-12-2019 01:49:29 QALogger This is warning message
+04-12-2019 01:49:29 QALogger clicking signin button
+04-12-2019 01:49:30 QALogger type username
+04-12-2019 01:49:30 QALogger type password
+04-12-2019 01:49:30 QALogger click submit button
+04-12-2019 01:49:31 QALogger Closing Browser
+04-12-2019 01:49:32 QALogger Launching Chrome Browser
+04-12-2019 01:49:32 QALogger This is debug message
+04-12-2019 01:49:32 QALogger This is fatal message
+04-12-2019 01:49:32 QALogger This is warning message
+04-12-2019 01:49:33 QALogger clicking signin button
+04-12-2019 01:49:33 QALogger type username
+04-12-2019 01:49:33 QALogger type password
+04-12-2019 01:49:34 QALogger click submit button
+04-12-2019 01:49:36 QALogger Launching Chrome Browser
+04-12-2019 01:49:36 QALogger This is debug message
+04-12-2019 01:49:36 QALogger This is fatal message
+04-12-2019 01:49:36 QALogger This is warning message
+04-12-2019 01:49:37 QALogger clicking signin button
+04-12-2019 01:49:37 QALogger type username
+04-12-2019 01:49:38 QALogger type password
+04-12-2019 01:49:38 QALogger click submit button

@@ -7,8 +7,10 @@ public class AccountSummaryPageLocators {
 	
 	
 	@FindBy(id="pay_bills_tab")
-	public WebElement paybillsbtn;
+	public WebElement paybillstab;
 	
+	@FindBy(id = "transfer_funds_tab")
+	public WebElement TransferFundsTab;
 
 	
 

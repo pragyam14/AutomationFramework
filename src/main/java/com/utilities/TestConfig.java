@@ -1,17 +1,17 @@
 package com.utilities;
-public class TestConfig{
+public class TestConfig {
 
 
 	
-	public static String server="smtp.gmail.com";
-	public static String from = "nareshpraj@gmail.com";
-	public static String password = "xxxxxxxxxx";
-	public static String[] to ={"naresh.busyqa@gmail.com"};
+	public static String server = "smtp.gmail.com";
+	public static String from = "busyqatraining@gmail.com";
+	public static String password = "busyQA123!";
+	public static String[] to = {"pragya.m14@gmail.com"};
 	public static String subject = "Extent Project Report";
 	
-	public static String messageBody ="TestMessage";
-	public static String attachmentPath="c:\\screenshot\\2017_10_3_14_49_9.jpg";
-	public static String attachmentName="error.jpg";
+	public static String messageBody = "TestMessage";
+	public static String attachmentPath = "./screenshot/2017_10_3_14_49_9.jpg";
+	public static String attachmentName = "error.jpg";
 	
 	
 	

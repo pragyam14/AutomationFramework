@@ -59,6 +59,15 @@
 			<artifactId>log4j</artifactId>
 			<version>1.2.17</version>
 		</dependency>
+		<!-- https://mvnrepository.com/artifact/org.apache.logging.log4j/log4j-core -->
+<!-- https://mvnrepository.com/artifact/org.apache.logging.log4j/log4j-api -->
+<dependency>
+    <groupId>org.apache.logging.log4j</groupId>
+    <artifactId>log4j-api</artifactId>
+    <version>2.12.1</version>
+</dependency>
+
+		
 		<!-- https://mvnrepository.com/artifact/javax.mail/mail -->
 		<dependency>
 			<groupId>javax.mail</groupId>
@@ -104,6 +113,9 @@
 		</dependency>
 	</dependencies>
 
+<profiles>
+<profile>
+<id>functional</id>
 	<build>
 		<plugins>
 			<plugin>
@@ -113,13 +125,86 @@
 				<configuration>
 					<testFailureIgnore> false </testFailureIgnore>
 					<suiteXmlFiles>
-						<suiteXmlFile>./src/test/resources/runners/regression.xml</suiteXmlFile>
+						<suiteXmlFile>./src/test/resources/runners/functionalTesting.xml</suiteXmlFile>
+						
 					</suiteXmlFiles>
 					</configuration>
 			</plugin>
 		</plugins>
+		<testResources>
+      <testResource>
+        <directory>src/test/resources/properties</directory>
+        <includes>
+          <include>log4j.properties</include>
+        </includes>
+      </testResource>
+    </testResources>
 		
 	</build>
+</profile>
+
+<profile>
+<id>datadriven</id>
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-surefire-plugin</artifactId>
+				<version>3.0.0-M4</version>
+				<configuration>
+					<testFailureIgnore> false </testFailureIgnore>
+					<suiteXmlFiles>
+						<suiteXmlFile>./src/test/resources/runners/datadrivenTesting.xml</suiteXmlFile>
+						
+					</suiteXmlFiles>
+					</configuration>
+			</plugin>
+		</plugins>
+		<testResources>
+      <testResource>
+        <directory>src/test/resources/properties</directory>
+        <includes>
+          <include>log4j.properties</include>
+        </includes>
+      </testResource>
+    </testResources>
+		
+	</build>
+</profile>
+
+<profile>
+<id>smoke</id>
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-surefire-plugin</artifactId>
+				<version>3.0.0-M4</version>
+				<configuration>
+					<testFailureIgnore> false </testFailureIgnore>
+					<suiteXmlFiles>
+						<suiteXmlFile>./src/test/resources/runners/smokeTesting.xml</suiteXmlFile>
+						
+					</suiteXmlFiles>
+					</configuration>
+			</plugin>
+		</plugins>
+		<testResources>
+      <testResource>
+        <directory>src/test/resources/properties</directory>
+        <includes>
+          <include>log4j.properties</include>
+        </includes>
+      </testResource>
+    </testResources>
+		
+	</build>
+</profile>
+
+
+</profiles>
+
+	
   
   
 </project>

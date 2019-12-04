@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -37,8 +37,8 @@
       <div class="suite">
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
-            <a href="#" class="navigator-link" panel-name="suite-Suite">
-              <span class="suite-name border-passed">Suite</span>
+            <a href="#" class="navigator-link" panel-name="suite-AutomationFramework">
+              <span class="suite-name border-failed">AutomationFramework</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -48,37 +48,37 @@
             <div class="suite-section-content">
               <ul>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="test-xml-Suite">
-                    <span>regression.xml</span>
+                  <a href="#" class="navigator-link " panel-name="test-xml-AutomationFramework">
+                    <span>functional.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="testlist-Suite">
+                  <a href="#" class="navigator-link " panel-name="testlist-AutomationFramework">
                     <span class="test-stats">1 test</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="group-Suite">
+                  <a href="#" class="navigator-link " panel-name="group-AutomationFramework">
                     <span>0 groups</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="times-Suite">
+                  <a href="#" class="navigator-link " panel-name="times-AutomationFramework">
                     <span>Times</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="reporter-Suite">
+                  <a href="#" class="navigator-link " panel-name="reporter-AutomationFramework">
                     <span>Reporter output</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="ignored-methods-Suite">
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-AutomationFramework">
                     <span>Ignored methods</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="chronological-Suite">
+                  <a href="#" class="navigator-link " panel-name="chronological-AutomationFramework">
                     <span>Chronological view</span>
                   </a> <!-- navigator-link  -->
                 </li>
@@ -91,26 +91,50 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">2 methods,   2 passed</span>
+                    <span class="method-stats">5 methods, 1 failed,   4 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-AutomationFramework" class="hide-methods failed suite-AutomationFramework"> (hide)</a> <!-- hide-methods failed suite-AutomationFramework -->
+                      <a href="#" panel-name="suite-AutomationFramework" class="show-methods failed suite-AutomationFramework"> (show)</a> <!-- show-methods failed suite-AutomationFramework -->
+                    </span>
+                    <div class="method-list-content failed suite-AutomationFramework">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-AutomationFramework" title="com.testcases.TC004_VerifyTransferFunds" hash-for-method="verifyTransferFunds">verifyTransferFunds</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-AutomationFramework -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
                     <span class="show-or-hide-methods passed">
-                      <a href="#" panel-name="suite-Suite" class="hide-methods passed suite-Suite"> (hide)</a> <!-- hide-methods passed suite-Suite -->
-                      <a href="#" panel-name="suite-Suite" class="show-methods passed suite-Suite"> (show)</a> <!-- show-methods passed suite-Suite -->
+                      <a href="#" panel-name="suite-AutomationFramework" class="hide-methods passed suite-AutomationFramework"> (hide)</a> <!-- hide-methods passed suite-AutomationFramework -->
+                      <a href="#" panel-name="suite-AutomationFramework" class="show-methods passed suite-AutomationFramework"> (show)</a> <!-- show-methods passed suite-AutomationFramework -->
                     </span>
-                    <div class="method-list-content passed suite-Suite">
+                    <div class="method-list-content passed suite-AutomationFramework">
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.testcases.LoginTest" hash-for-method="loginTest">loginTest</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-AutomationFramework" title="com.testcases.TC002_PaySavedPayee" hash-for-method="PaySavedPayee">PaySavedPayee</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.testcases.SignInTest" hash-for-method="signInTest">signInTest</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-AutomationFramework" title="com.testcases.TC005_PurchaseForeignCurrency" hash-for-method="PurchaseForeignCurrency">PurchaseForeignCurrency</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content passed suite-Suite -->
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-AutomationFramework" title="com.testcases.TC003_VerifyAddPayee" hash-for-method="VerifyAddPayee">VerifyAddPayee</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-AutomationFramework" title="com.testcases.TC001_LoginTest" hash-for-method="loginTest">loginTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-AutomationFramework -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -121,26 +145,82 @@
     </div> <!-- navigator-root -->
     <div class="wrapper">
       <div class="main-panel-root">
-        <div panel-name="suite-Suite" class="panel Suite">
-          <div class="suite-Suite-class-passed">
+        <div panel-name="suite-AutomationFramework" class="panel AutomationFramework">
+          <div class="suite-AutomationFramework-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">com.testcases.SignInTest</span>
+              <img src="failed.png"/>
+              <span class="class-name">com.testcases.TC004_VerifyTransferFunds</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="signInTest">
-                  </a> <!-- signInTest -->
-                  <span class="method-name">signInTest</span>
+                  <a name="verifyTransferFunds">
+                  </a> <!-- verifyTransferFunds -->
+                  <span class="method-name">verifyTransferFunds</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: Cannot locate option with value: 13
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;Saurabhs-MacBook-Pro.local&apos;, ip: &apos;192.168.2.12&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.14.6&apos;, java.version: &apos;1.8.0_231&apos;
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.ui.Select.findOptionsByValue(Select.java:283)
+	at org.openqa.selenium.support.ui.Select.selectByValue(Select.java:186)
+	at com.testcases.TC004_VerifyTransferFunds.verifyTransferFunds(TC004_VerifyTransferFunds.java:40)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+... Removed 27 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
-          <div class="suite-Suite-class-passed">
+          </div> <!-- suite-AutomationFramework-class-failed -->
+          <div class="suite-AutomationFramework-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">com.testcases.LoginTest</span>
+              <span class="class-name">com.testcases.TC003_VerifyAddPayee</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="VerifyAddPayee">
+                  </a> <!-- VerifyAddPayee -->
+                  <span class="method-name">VerifyAddPayee</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-AutomationFramework-class-passed -->
+          <div class="suite-AutomationFramework-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.testcases.TC002_PaySavedPayee</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="PaySavedPayee">
+                  </a> <!-- PaySavedPayee -->
+                  <span class="method-name">PaySavedPayee</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-AutomationFramework-class-passed -->
+          <div class="suite-AutomationFramework-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.testcases.TC005_PurchaseForeignCurrency</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="PurchaseForeignCurrency">
+                  </a> <!-- PurchaseForeignCurrency -->
+                  <span class="method-name">PurchaseForeignCurrency</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-AutomationFramework-class-passed -->
+          <div class="suite-AutomationFramework-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.testcases.TC001_LoginTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
@@ -151,110 +231,162 @@
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
-        </div> <!-- panel Suite -->
-        <div panel-name="test-xml-Suite" class="panel">
+          </div> <!-- suite-AutomationFramework-class-passed -->
+        </div> <!-- panel AutomationFramework -->
+        <div panel-name="test-xml-AutomationFramework" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">/Users/SaurabhM84/Pragya Automation Testing/eclipse-workspace/AutomationFramework/src/test/resources/runners/regression.xml</span>
+            <span class="header-content">/Users/SaurabhM84/Pragya Automation Testing/eclipse-workspace/AutomationFramework/src/test/resources/runners/functional.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Suite&quot;&gt;
+&lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;AutomationFramework&quot;&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;com.listeners.CustomListeners&quot;/&gt;
+    &lt;listener class-name=&quot;org.uncommons.reportng.HTMLReporter&quot;/&gt;
+  &lt;/listeners&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Test&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;com.testcases.LoginTest&quot;/&gt;
-      &lt;class name=&quot;com.testcases.SignInTest&quot;/&gt;
+      &lt;class name=&quot;com.testcases.TC001_LoginTest&quot;/&gt;
+      &lt;class name=&quot;com.testcases.TC005_PurchaseForeignCurrency&quot;/&gt;
+      &lt;class name=&quot;com.testcases.TC003_VerifyAddPayee&quot;/&gt;
+      &lt;class name=&quot;com.testcases.TC002_PaySavedPayee&quot;/&gt;
+      &lt;class name=&quot;com.testcases.TC004_VerifyTransferFunds&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Test --&gt;
-&lt;/suite&gt; &lt;!-- Suite --&gt;
+&lt;/suite&gt; &lt;!-- AutomationFramework --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="testlist-Suite" class="panel">
+        <div panel-name="testlist-AutomationFramework" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Tests for Suite</span>
+            <span class="header-content">Tests for AutomationFramework</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Test (2 classes)</span>
+                <span class="test-name">Test (5 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="group-Suite" class="panel">
+        <div panel-name="group-AutomationFramework" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Groups for Suite</span>
+            <span class="header-content">Groups for AutomationFramework</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="times-Suite" class="panel">
+        <div panel-name="times-AutomationFramework" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Times for Suite</span>
+            <span class="header-content">Times for AutomationFramework</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="times-div">
               <script type="text/javascript">
-suiteTableInitFunctions.push('tableData_Suite');
-function tableData_Suite() {
+suiteTableInitFunctions.push('tableData_AutomationFramework');
+function tableData_AutomationFramework() {
 var data = new google.visualization.DataTable();
 data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(2);
+data.addRows(5);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'loginTest')
-data.setCell(0, 2, 'com.testcases.LoginTest')
-data.setCell(0, 3, 6620);
+data.setCell(0, 1, 'VerifyAddPayee')
+data.setCell(0, 2, 'com.testcases.TC003_VerifyAddPayee')
+data.setCell(0, 3, 6054);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'signInTest')
-data.setCell(1, 2, 'com.testcases.SignInTest')
-data.setCell(1, 3, 2772);
-window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
+data.setCell(1, 1, 'loginTest')
+data.setCell(1, 2, 'com.testcases.TC001_LoginTest')
+data.setCell(1, 3, 5190);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'PurchaseForeignCurrency')
+data.setCell(2, 2, 'com.testcases.TC005_PurchaseForeignCurrency')
+data.setCell(2, 3, 5146);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'PaySavedPayee')
+data.setCell(3, 2, 'com.testcases.TC002_PaySavedPayee')
+data.setCell(3, 3, 5122);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'verifyTransferFunds')
+data.setCell(4, 2, 'com.testcases.TC004_VerifyTransferFunds')
+data.setCell(4, 3, 3885);
+window.suiteTableData['AutomationFramework']= { tableData: data, tableDiv: 'times-div-AutomationFramework'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 9 seconds</span>
-              <div id="times-div-Suite">
-              </div> <!-- times-div-Suite -->
+              <span class="suite-total-time">Total running time: 25 seconds</span>
+              <div id="times-div-AutomationFramework">
+              </div> <!-- times-div-AutomationFramework -->
             </div> <!-- times-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="reporter-Suite" class="panel">
+        <div panel-name="reporter-AutomationFramework" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Reporter output for Suite</span>
+            <span class="header-content">Reporter output for AutomationFramework</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">verifyTransferFunds</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Click to see Screenshot</span>
+                <span class="reporter-method-output"><a target= "blank" href=null-03-12-2019 4:43:1.png>Screenshot</a></span>
+                <span class="reporter-method-output"><br></span>
+                <span class="reporter-method-output"><br></span>
+                <span class="reporter-method-output"><a target= "_blank" href=null-03-12-2019 4:43:1.png><img src=null-03-12-2019 4:43:1.png height=200 width=200></img></a></span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="ignored-methods-Suite" class="panel">
+        <div panel-name="ignored-methods-AutomationFramework" class="panel">
           <div class="main-panel-header rounded-window-top">
             <span class="header-content">0 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="chronological-Suite" class="panel">
+        <div panel-name="chronological-AutomationFramework" class="panel">
           <div class="main-panel-header rounded-window-top">
             <span class="header-content">Methods in chronological order</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">com.testcases.LoginTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">com.testcases.TC001_LoginTest</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">loginTest</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
-              <div class="chronological-class-name">com.testcases.SignInTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">com.testcases.TC005_PurchaseForeignCurrency</div> <!-- chronological-class-name -->
               <div class="test-method">
-                <span class="method-name">signInTest</span>
-                <span class="method-start">6629 ms</span>
+                <span class="method-name">PurchaseForeignCurrency</span>
+                <span class="method-start">5534 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.testcases.TC003_VerifyAddPayee</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">VerifyAddPayee</span>
+                <span class="method-start">10771 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.testcases.TC002_PaySavedPayee</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">PaySavedPayee</span>
+                <span class="method-start">16897 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.testcases.TC004_VerifyTransferFunds</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">verifyTransferFunds</span>
+                <span class="method-start">22094 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
