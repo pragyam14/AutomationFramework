@@ -16,14 +16,6 @@ public class AccountSummaryPage extends Page {
 		PageFactory.initElements(factory, this.acctsummary);
 	}
 	
-	public String actual = driver.getTitle();
-
-	
-	public void goToAccountActivity() {
-		
-		
-	}
-	
 	public void goToTransferFund() {
 		acctsummary.TransferFundsTab.click();
 	}
@@ -32,16 +24,4 @@ public class AccountSummaryPage extends Page {
 		acctsummary.paybillstab.click();
 		
 	}
-	
-	
-	public void goToMyMoneyMap() {
-		
-		
-	}
-	
-	public void goToOnlineStatements() {
-		
-		
-	}
-
 }

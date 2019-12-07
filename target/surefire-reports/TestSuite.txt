@@ -1,16 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 4, Failures: 3, Errors: 0, Skipped: 0, Time elapsed: 22.59 s <<< FAILURE! - in TestSuite
-com.datadriven.testcases.LoginTest_DataDriven.login_datadriven  Time elapsed: 5.244 s  <<< FAILURE!
-java.lang.AssertionError: expected:<Zero - Log in> but was:<Zero - Account Summary>
-	at com.datadriven.testcases.LoginTest_DataDriven.login_datadriven(LoginTest_DataDriven.java:49)
-
-com.datadriven.testcases.LoginTest_DataDriven.login_datadriven  Time elapsed: 3.071 s  <<< FAILURE!
-java.lang.AssertionError: expected:<Zero - Log in> but was:<Zero - Account Summary>
-	at com.datadriven.testcases.LoginTest_DataDriven.login_datadriven(LoginTest_DataDriven.java:49)
-
-com.datadriven.testcases.LoginTest_DataDriven.login_datadriven  Time elapsed: 3.635 s  <<< FAILURE!
-java.lang.AssertionError: expected:<Zero - Log in> but was:<Zero - Account Summary>
-	at com.datadriven.testcases.LoginTest_DataDriven.login_datadriven(LoginTest_DataDriven.java:49)
+Tests run: 2, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 16.669 s <<< FAILURE! - in TestSuite
+com.testcases.fail.TC003_VerifyAddPayee.VerifyAddPayee  Time elapsed: 6.35 s  <<< FAILURE!
+java.lang.AssertionError: expected [The new payee HydroOne Utility was successfully created.] but found [The new payee HydroOne Utility was successfully created.test]
+	at com.testcases.fail.TC003_VerifyAddPayee.VerifyAddPayee(TC003_VerifyAddPayee.java:49)
 

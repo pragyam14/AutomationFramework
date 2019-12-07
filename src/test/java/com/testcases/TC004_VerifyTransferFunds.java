@@ -1,20 +1,16 @@
 package com.testcases;
 
 import org.testng.annotations.Test;
-import org.testng.AssertJUnit;
-import org.testng.annotations.Test;
-import org.testng.AssertJUnit;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.pagefactory.AjaxElementLocatorFactory;
 import org.testng.Assert;
-import org.testng.annotations.Test;
-
 import com.actions.AccountSummaryPage;
 import com.actions.HomePage;
 import com.actions.LoginPage;
 import com.actions.TransferFundsPage;
 import com.base.Page;
 import com.locators.TransferFundsLocators;
+import com.relevantcodes.extentreports.LogStatus;
 
 public class TC004_VerifyTransferFunds extends Page {
 	
@@ -22,8 +18,6 @@ public class TC004_VerifyTransferFunds extends Page {
 	public void verifyTransferFunds() {
 		
 		Page.initConfiguration();
-		log.debug("Login Test Started.");
-		//test.log(LogStatus.INFO, "Login Test started");
 		
 		HomePage home = new HomePage();
 		home.gotoSignIn();
@@ -31,9 +25,12 @@ public class TC004_VerifyTransferFunds extends Page {
 		
 		LoginPage login=new LoginPage();
 		login.doLogin("username", "password");
+		log.info("Logged into Zero Banking successfully");
+		test.log(LogStatus.INFO, "Logged into Zero Banking successfully");
 		
 		AccountSummaryPage asp = new AccountSummaryPage();
 		asp.goToTransferFund();
+		log.info("Cliked on Transfer Funds tab successfully");
 		
 		TransferFundsPage tf = new TransferFundsPage();
 		tf.SelectFrmAcct().selectByValue("2");
@@ -46,10 +43,10 @@ public class TC004_VerifyTransferFunds extends Page {
 		
 		String Actualmsg = locator.AlertContent.getText();
 		String Expectedmsg = "You successfully submitted your transaction.";
-		AssertJUnit.assertEquals(Actualmsg, Expectedmsg);
+		Assert.assertEquals(Actualmsg, Expectedmsg);
+		log.info("FundsTransfer done successfully");
+		test.log(LogStatus.INFO, "FundsTransfer done successfully");
+
 		Page.quitBrowser();
 	}
-	
-	
-
 }

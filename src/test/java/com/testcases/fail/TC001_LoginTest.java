@@ -2,12 +2,6 @@ package com.testcases.fail;
 
 
 import org.testng.annotations.Test;
-import org.testng.AssertJUnit;
-import org.testng.annotations.Test;
-import org.testng.AssertJUnit;
-import org.testng.annotations.Test;
-import org.testng.AssertJUnit;
-import org.testng.annotations.Test;
 import org.testng.Assert;
 
 import com.actions.HomePage;
@@ -23,8 +17,6 @@ public class TC001_LoginTest extends Page {
 	public void loginTest(){
 				
 		Page.initConfiguration();
-		log.debug("Login Test Started.");
-		test.log(LogStatus.INFO, "Login Test started");
 		
 		HomePage home = new HomePage();
 		home.gotoSignIn();
@@ -32,16 +24,17 @@ public class TC001_LoginTest extends Page {
 		
 		LoginPage login=new LoginPage();
 		login.doLogin("username", "password");
+		log.debug("Login Test Started.");
+		test.log(LogStatus.INFO, "Login Test started");
 		
 		String actual = Page.driver.getTitle();
 		String expected="Zero - Account Summary";
-		AssertJUnit.assertEquals(actual, expected);
+		Assert.assertEquals(actual, expected);
 		log.debug("Login Test passed successfully.");
-		test.log(LogStatus.INFO, "Login Test successful");
+		test.log(LogStatus.INFO, "Logged into Zero Banking System successfully");
 		
 		Page.quitBrowser();
 		}
-
 }
 
 

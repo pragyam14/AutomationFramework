@@ -1,6 +1,7 @@
 com/testcases/TC002_PaySavedPayee.class
 com/datadriven/testcases/LoginTest_DataDriven.class
 com/testcases/TC005_PurchaseForeignCurrency.class
+com/datadriven/testcases/AddPayee_DataDriven.class
 com/testcases/fail/TC001_LoginTest.class
 com/testcases/TC004_VerifyTransferFunds.class
 com/testcases/fail/TC003_VerifyAddPayee.class

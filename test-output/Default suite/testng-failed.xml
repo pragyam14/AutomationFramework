@@ -3,11 +3,11 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.testcases.TC001_LoginTest">
+      <class name="com.datadriven.testcases.AddPayee_DataDriven">
         <methods>
-          <include name="loginTest"/>
+          <include name="AddnewPayee_datadriven" invocation-numbers="0"/>
         </methods>
-      </class> <!-- com.testcases.TC001_LoginTest -->
+      </class> <!-- com.datadriven.testcases.AddPayee_DataDriven -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

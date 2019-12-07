@@ -1,6 +1,7 @@
 /Users/SaurabhM84/Pragya Automation Testing/eclipse-workspace/AutomationFramework/src/test/java/com/testcases/TC002_PaySavedPayee.java
 /Users/SaurabhM84/Pragya Automation Testing/eclipse-workspace/AutomationFramework/src/test/java/com/datadriven/testcases/LoginTest_DataDriven.java
 /Users/SaurabhM84/Pragya Automation Testing/eclipse-workspace/AutomationFramework/src/test/java/com/testcases/TC003_VerifyAddPayee.java
+/Users/SaurabhM84/Pragya Automation Testing/eclipse-workspace/AutomationFramework/src/test/java/com/datadriven/testcases/AddPayee_DataDriven.java
 /Users/SaurabhM84/Pragya Automation Testing/eclipse-workspace/AutomationFramework/src/test/java/com/testcases/TC005_PurchaseForeignCurrency.java
 /Users/SaurabhM84/Pragya Automation Testing/eclipse-workspace/AutomationFramework/src/test/java/com/testcases/fail/TC003_VerifyAddPayee.java
 /Users/SaurabhM84/Pragya Automation Testing/eclipse-workspace/AutomationFramework/src/test/java/com/testcases/TC001_LoginTest.java

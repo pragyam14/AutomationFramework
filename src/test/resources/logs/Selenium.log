@@ -1,53 +1,34 @@
-01:49:24,325  INFO QALogger:47 - Launching Chrome Browser
-01:49:24,330 DEBUG QALogger:48 - This is debug message
-01:49:24,330 FATAL QALogger:49 - This is fatal message
-01:49:24,330  WARN QALogger:50 - This is warning message
-01:49:25,261 DEBUG QALogger:20 - clicking signin button
-01:49:25,497 DEBUG QALogger:35 - type username
-01:49:25,700 DEBUG QALogger:38 - type password
-01:49:25,857 DEBUG QALogger:41 - click submit button
-01:49:26,875 DEBUG cache:45 - Couldn't find template in cache for "Extent.ftl"("en_US", UTF-8, parsed); will try to load it.
-01:49:26,876 DEBUG cache:45 - TemplateLoader.findTemplateSource("Extent_en_US.ftl"): Not found
-01:49:26,877 DEBUG cache:45 - TemplateLoader.findTemplateSource("Extent_en.ftl"): Not found
-01:49:26,879 DEBUG cache:45 - TemplateLoader.findTemplateSource("Extent.ftl"): Found
-01:49:26,879 DEBUG cache:45 - Loading template for "Extent.ftl"("en_US", UTF-8, parsed) from "jar:file:/Users/SaurabhM84/.m2/repository/com/relevantcodes/extentreports/2.41.2/extentreports-2.41.2.jar!/com/relevantcodes/extentreports/view/Extent.ftl"
-01:49:29,080  INFO QALogger:47 - Launching Chrome Browser
-01:49:29,081 DEBUG QALogger:48 - This is debug message
-01:49:29,081 FATAL QALogger:49 - This is fatal message
-01:49:29,083  WARN QALogger:50 - This is warning message
-01:49:29,921 DEBUG QALogger:20 - clicking signin button
-01:49:30,164 DEBUG QALogger:35 - type username
-01:49:30,409 DEBUG QALogger:38 - type password
-01:49:30,530 DEBUG QALogger:41 - click submit button
-01:49:31,257 DEBUG QALogger:60 - Closing Browser
-01:49:31,258 DEBUG cache:45 - Couldn't find template in cache for "Extent.ftl"("en_US", UTF-8, parsed); will try to load it.
-01:49:31,259 DEBUG cache:45 - TemplateLoader.findTemplateSource("Extent_en_US.ftl"): Not found
-01:49:31,259 DEBUG cache:45 - TemplateLoader.findTemplateSource("Extent_en.ftl"): Not found
-01:49:31,259 DEBUG cache:45 - TemplateLoader.findTemplateSource("Extent.ftl"): Found
-01:49:31,260 DEBUG cache:45 - Loading template for "Extent.ftl"("en_US", UTF-8, parsed) from "jar:file:/Users/SaurabhM84/.m2/repository/com/relevantcodes/extentreports/2.41.2/extentreports-2.41.2.jar!/com/relevantcodes/extentreports/view/Extent.ftl"
-01:49:32,732  INFO QALogger:47 - Launching Chrome Browser
-01:49:32,733 DEBUG QALogger:48 - This is debug message
-01:49:32,734 FATAL QALogger:49 - This is fatal message
-01:49:32,734  WARN QALogger:50 - This is warning message
-01:49:33,563 DEBUG QALogger:20 - clicking signin button
-01:49:33,815 DEBUG QALogger:35 - type username
-01:49:33,984 DEBUG QALogger:38 - type password
-01:49:34,111 DEBUG QALogger:41 - click submit button
-01:49:34,946 DEBUG cache:45 - Couldn't find template in cache for "Extent.ftl"("en_US", UTF-8, parsed); will try to load it.
-01:49:34,948 DEBUG cache:45 - TemplateLoader.findTemplateSource("Extent_en_US.ftl"): Not found
-01:49:34,948 DEBUG cache:45 - TemplateLoader.findTemplateSource("Extent_en.ftl"): Not found
-01:49:34,949 DEBUG cache:45 - TemplateLoader.findTemplateSource("Extent.ftl"): Found
-01:49:34,950 DEBUG cache:45 - Loading template for "Extent.ftl"("en_US", UTF-8, parsed) from "jar:file:/Users/SaurabhM84/.m2/repository/com/relevantcodes/extentreports/2.41.2/extentreports-2.41.2.jar!/com/relevantcodes/extentreports/view/Extent.ftl"
-01:49:36,716  INFO QALogger:47 - Launching Chrome Browser
-01:49:36,718 DEBUG QALogger:48 - This is debug message
-01:49:36,718 FATAL QALogger:49 - This is fatal message
-01:49:36,719  WARN QALogger:50 - This is warning message
-01:49:37,693 DEBUG QALogger:20 - clicking signin button
-01:49:37,961 DEBUG QALogger:35 - type username
-01:49:38,215 DEBUG QALogger:38 - type password
-01:49:38,374 DEBUG QALogger:41 - click submit button
-01:49:39,194 DEBUG cache:45 - Couldn't find template in cache for "Extent.ftl"("en_US", UTF-8, parsed); will try to load it.
-01:49:39,194 DEBUG cache:45 - TemplateLoader.findTemplateSource("Extent_en_US.ftl"): Not found
-01:49:39,195 DEBUG cache:45 - TemplateLoader.findTemplateSource("Extent_en.ftl"): Not found
-01:49:39,195 DEBUG cache:45 - TemplateLoader.findTemplateSource("Extent.ftl"): Found
-01:49:39,196 DEBUG cache:45 - Loading template for "Extent.ftl"("en_US", UTF-8, parsed) from "jar:file:/Users/SaurabhM84/.m2/repository/com/relevantcodes/extentreports/2.41.2/extentreports-2.41.2.jar!/com/relevantcodes/extentreports/view/Extent.ftl"
+23:51:23,734  INFO QALogger:43 - Launching Chrome Browser
+23:51:23,738 DEBUG QALogger:44 - This is debug message
+23:51:23,739 FATAL QALogger:45 - This is fatal message
+23:51:23,739  WARN QALogger:46 - This is warning message
+23:51:24,718 DEBUG QALogger:21 - clicking signin button
+23:51:25,063 DEBUG QALogger:23 - Clicked on SignIn Button
+23:51:25,066 DEBUG QALogger:20 - type username
+23:51:25,300 DEBUG QALogger:23 - type password
+23:51:25,427 DEBUG QALogger:26 - click submit button
+23:51:25,936 DEBUG QALogger:27 - Login Test Started.
+23:51:25,969 DEBUG QALogger:33 - Login Test passed successfully.
+23:51:26,263 DEBUG QALogger:56 - Closing Browser
+23:51:26,291 DEBUG cache:45 - Couldn't find template in cache for "Extent.ftl"("en_US", UTF-8, parsed); will try to load it.
+23:51:26,292 DEBUG cache:45 - TemplateLoader.findTemplateSource("Extent_en_US.ftl"): Not found
+23:51:26,294 DEBUG cache:45 - TemplateLoader.findTemplateSource("Extent_en.ftl"): Not found
+23:51:26,296 DEBUG cache:45 - TemplateLoader.findTemplateSource("Extent.ftl"): Found
+23:51:26,297 DEBUG cache:45 - Loading template for "Extent.ftl"("en_US", UTF-8, parsed) from "jar:file:/Users/SaurabhM84/.m2/repository/com/relevantcodes/extentreports/2.41.2/extentreports-2.41.2.jar!/com/relevantcodes/extentreports/view/Extent.ftl"
+23:51:28,126  INFO QALogger:43 - Launching Chrome Browser
+23:51:28,126 DEBUG QALogger:44 - This is debug message
+23:51:28,127 FATAL QALogger:45 - This is fatal message
+23:51:28,127  WARN QALogger:46 - This is warning message
+23:51:29,098 DEBUG QALogger:21 - clicking signin button
+23:51:29,337  INFO QALogger:24 - clicked on SignIn Button
+23:51:29,339 DEBUG QALogger:20 - type username
+23:51:29,611 DEBUG QALogger:23 - type password
+23:51:29,752 DEBUG QALogger:26 - click submit button
+23:51:30,311 DEBUG QALogger:28 - logged in successfully
+23:51:30,734  INFO QALogger:34 - clicked to Paybills tab
+23:51:30,913 DEBUG QALogger:38 - clicked to Add New Payee Tab
+23:51:32,834 DEBUG cache:45 - Couldn't find template in cache for "Extent.ftl"("en_US", UTF-8, parsed); will try to load it.
+23:51:32,834 DEBUG cache:45 - TemplateLoader.findTemplateSource("Extent_en_US.ftl"): Not found
+23:51:32,835 DEBUG cache:45 - TemplateLoader.findTemplateSource("Extent_en.ftl"): Not found
+23:51:32,835 DEBUG cache:45 - TemplateLoader.findTemplateSource("Extent.ftl"): Found
+23:51:32,835 DEBUG cache:45 - Loading template for "Extent.ftl"("en_US", UTF-8, parsed) from "jar:file:/Users/SaurabhM84/.m2/repository/com/relevantcodes/extentreports/2.41.2/extentreports-2.41.2.jar!/com/relevantcodes/extentreports/view/Extent.ftl"

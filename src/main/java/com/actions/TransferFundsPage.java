@@ -9,7 +9,7 @@ import com.locators.TransferFundsLocators;
 
 public class TransferFundsPage extends Page {
 	
-	TransferFundsLocators transfunds;
+	public TransferFundsLocators transfunds;
 	public TransferFundsPage() {
 		this.transfunds=new TransferFundsLocators();
 		AjaxElementLocatorFactory factory = new AjaxElementLocatorFactory(driver, 10);

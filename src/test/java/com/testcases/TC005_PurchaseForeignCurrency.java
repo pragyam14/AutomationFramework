@@ -1,31 +1,26 @@
 package com.testcases;
 
 import org.testng.annotations.Test;
-import org.testng.AssertJUnit;
-import org.testng.annotations.Test;
-import org.testng.AssertJUnit;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.pagefactory.AjaxElementLocatorFactory;
 import org.testng.Assert;
-import org.testng.annotations.Test;
-
 import com.actions.AccountSummaryPage;
 import com.actions.HomePage;
 import com.actions.LoginPage;
 import com.actions.PayBillsPage;
 import com.base.Page;
 import com.locators.PayBillsLocators;
+import com.relevantcodes.extentreports.LogStatus;
 
 public class TC005_PurchaseForeignCurrency extends Page {
 
 	@Test(priority = 5)
-	
 	public void PurchaseForeignCurrency(){
 	Page.initConfiguration();
 	
 	HomePage home = new HomePage();
 	home.gotoSignIn();
-	log.debug("clicked on SignIn Button");
+	log.info("clicked on SignIn Button");
 	
 	LoginPage login=new LoginPage();
 	login.doLogin("username", "password");
@@ -33,10 +28,13 @@ public class TC005_PurchaseForeignCurrency extends Page {
 	
 	AccountSummaryPage asp = new AccountSummaryPage();
 	asp.goToPayBills();
-	log.debug("clicked to Paybills tab");
+	log.info("clicked to Paybills tab successfully");
 	
 	PayBillsPage pb = new PayBillsPage();
 	pb.ClickPurchaseForeignCurrencyTab();
+	log.info("clicked to Purchase Foreign Currency tab successfully");
+	test.log(LogStatus.INFO, "Purchase Foreign Currency tab opened up successfully");
+
 	pb.CurrencyDropDown().selectByValue("CAD");
 	pb.DoPurchaseForeignCurrency("100");
 	
@@ -46,7 +44,11 @@ public class TC005_PurchaseForeignCurrency extends Page {
 	
 	String ActualText = locator.alertcontent.getText();
 	String ExpectedText = "Foreign currency cash was successfully purchased.";
-	AssertJUnit.assertTrue(ActualText.equals(ExpectedText));	
+	Assert.assertTrue(ActualText.equals(ExpectedText));	
+	log.info("Foreign currency is being successfully purchased");
+	test.log(LogStatus.INFO, "Foreign currency is being successfully purchased");
+
+
 	Page.quitBrowser();
 
 	

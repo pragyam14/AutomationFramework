@@ -10,6 +10,7 @@ import com.locators.HomePageLocators;
 public class HomePage extends Page {
 	
 	public HomePageLocators home;
+	
 	public HomePage() {
 		this.home=new HomePageLocators();
 		AjaxElementLocatorFactory factory = new AjaxElementLocatorFactory(driver, 10);
@@ -19,25 +20,6 @@ public class HomePage extends Page {
 	public void gotoSignIn() {
 		log.debug("clicking signin button");
 		//test.log(LogStatus.INFO, "Clicking on SignIn Button");
-		
-		home.signInBtn.click();
-		
-	
-		
+		home.signInBtn.click();		
 	}
-	
-	public void goToHome() {
-		
-		
-	}
-	
-	public void goToOnLineBanking() {
-		
-	}
-	
-	public void goToFeedback() {
-		
-		
-	}
-
 }

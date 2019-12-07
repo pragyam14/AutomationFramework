@@ -1,17 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [AutomationFramework]">
-  <listeners>
-    <listener class-name="com.listeners.CustomListeners"/>
-    <listener class-name="org.uncommons.reportng.HTMLReporter"/>
-  </listeners>
-  <test thread-count="5" name="Test(failed)">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.testcases.TC004_VerifyTransferFunds">
+      <class name="com.datadriven.testcases.AddPayee_DataDriven">
         <methods>
-          <include name="verifyTransferFunds"/>
+          <include name="AddnewPayee_datadriven" invocation-numbers="0"/>
         </methods>
-      </class> <!-- com.testcases.TC004_VerifyTransferFunds -->
+      </class> <!-- com.datadriven.testcases.AddPayee_DataDriven -->
     </classes>
-  </test> <!-- Test(failed) -->
-</suite> <!-- Failed suite [AutomationFramework] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

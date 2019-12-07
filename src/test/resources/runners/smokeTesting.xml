@@ -7,10 +7,11 @@
 		<listener class-name="org.uncommons.reportng.HTMLReporter" />
 
 	</listeners>
-  <test thread-count="5" name="Test">
+  <test thread-count="5" name="Test" preserve-order="false">
     <classes>
+          <class name="com.testcases.fail.TC003_VerifyAddPayee"/>
+    
       <class name="com.testcases.fail.TC001_LoginTest"/>
-      <class name="com.testcases.fail.TC003_VerifyAddPayee"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

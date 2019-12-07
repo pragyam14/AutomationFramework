@@ -43,12 +43,13 @@ public class CustomListeners extends Page implements ITestListener,ISuiteListene
 
 		System.setProperty("org.uncommons.reportng.escape-output","false");
 		try {
-			Utilities.takeScreenshot();
+			String testcasename = testResult.getName();
+			Utilities.takeScreenshot(testcasename);
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		test.log(LogStatus.FAIL, testResult.getName().toUpperCase()+" Failed with exception : "+testResult.getThrowable());
+		test.log(LogStatus.FAIL, "TestCase_"+testResult.getName()+" : Failed with exception : "+testResult.getThrowable());
 		test.log(LogStatus.INFO, test.addScreenCapture(Utilities.screenshotName));
 		
 		
@@ -93,11 +94,10 @@ public class CustomListeners extends Page implements ITestListener,ISuiteListene
 		MonitoringMail mail = new MonitoringMail();
 		 
 		try {
-			messageBody = "http://" + InetAddress.getLocalHost().getHostAddress()
-					+ ":8080/job/AutomationFramework/ExtentReport/";
-		} catch (UnknownHostException e) {
+			messageBody = "http://"+ InetAddress.getLocalHost().getHostAddress()+ ":8080/job/AutomationFramework/ExtentReport/";
+		} catch (UnknownHostException e1) {
 			// TODO Auto-generated catch block
-			e.printStackTrace();
+			e1.printStackTrace();
 		}
 	
 		try {
@@ -115,7 +115,7 @@ public class CustomListeners extends Page implements ITestListener,ISuiteListene
 
 	public void onStart(ISuite arg0) {
 		// TODO Auto-generated method stub
-		test = rep.startTest(arg0.getName().toUpperCase());
+		//test = rep.startTest(arg0.getName().toUpperCase());
 	}
 
 }

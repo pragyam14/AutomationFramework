@@ -3,6 +3,7 @@ package com.utilities;
 import java.io.File;
 import java.io.FileInputStream;
 
+import org.apache.poi.ss.usermodel.DataFormatter;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
@@ -10,6 +11,7 @@ public class ExcelConfig {
 
 	XSSFWorkbook wb;
 	XSSFSheet sheet1;
+	DataFormatter formatter = new DataFormatter();
 	
 	public ExcelConfig(String excelpath){
 		try {
@@ -17,19 +19,15 @@ public class ExcelConfig {
 		FileInputStream fis = new FileInputStream(src);
 		 wb = new XSSFWorkbook(fis);
 		 sheet1=wb.getSheetAt(0);
-		 
-	
-		} catch (Exception e) {
-		
+		} 
+		catch (Exception e) {
 		System.out.println(e.getMessage());
 	} 	
 		}
-	
-	
-	public String getData(int Sheetnumber, int row, int col)
-	{
+		
+	public String getData(int Sheetnumber, int row, int col){
 		sheet1=wb.getSheetAt(Sheetnumber);
-		String data=sheet1.getRow(row).getCell(col).getStringCellValue();
+		String data=formatter.formatCellValue(sheet1.getRow(row).getCell(col));
 		return data;
 	}	
 	
@@ -38,7 +36,4 @@ public class ExcelConfig {
 		row = row+1;
 		return row;
 	}
-	
-	
-	
 }

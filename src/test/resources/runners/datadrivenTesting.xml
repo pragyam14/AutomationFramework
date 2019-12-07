@@ -10,6 +10,7 @@
   <test thread-count="5" name="Test">
     <classes>
       <class name="com.datadriven.testcases.LoginTest_DataDriven"/>
+      <class name="com.datadriven.testcases.AddPayee_DataDriven"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
